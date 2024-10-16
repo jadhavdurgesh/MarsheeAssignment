@@ -18,22 +18,22 @@ The ThemeController is responsible for managing the theme state (light or dark) 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class ThemeController extends GetxController {
-  // Observing the theme state
-  RxBool isLight = true.obs;
-
-  // Method to set theme
-  void setTheme(bool value) {
-    isLight.value = value;
-    if (isLight.value) {
-      // Apply light theme
-      Get.changeTheme(ThemeData.light());
-    } else {
-      // Apply dark theme
-      Get.changeTheme(ThemeData.dark());
-    }
-  }
-}
+	class ThemeController extends GetxController {
+	  // Observing the theme state
+	  RxBool isLight = true.obs;
+	
+	  // Method to set theme
+	  void setTheme(bool value) {
+	    isLight.value = value;
+	    if (isLight.value) {
+	      // Apply light theme
+	      Get.changeTheme(ThemeData.light());
+	    } else {
+	      // Apply dark theme
+	      Get.changeTheme(ThemeData.dark());
+	    }
+	  }
+	}
 
 
 	2.	Theme Toggling in the UI:
