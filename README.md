@@ -12,11 +12,12 @@ This Flutter project includes a feature that allows users to toggle between ligh
 
 How Theme Switching is Implemented:
 
-	1.	ThemeController:
+1.	ThemeController:
+
 The ThemeController is responsible for managing the theme state (light or dark) across the app. It uses an RxBool variable isLight to track the current theme state.
 
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+	import 'package:flutter/material.dart';
+	import 'package:get/get.dart';
 
 	class ThemeController extends GetxController {
 	  // Observing the theme state
@@ -36,7 +37,7 @@ import 'package:get/get.dart';
 	}
 
 
-	2.	Theme Toggling in the UI:
+2.	Theme Toggling in the UI:
 In the Introduction screen, an IconButton is used in the app bar to allow users to toggle between light and dark themes. The button updates the theme state via the setTheme method in the ThemeController.
 
 import 'package:flutter/material.dart';
