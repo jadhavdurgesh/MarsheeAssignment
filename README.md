@@ -12,9 +12,7 @@ This Flutter project includes a feature that allows users to toggle between ligh
 
 How Theme Switching is Implemented:
 
-1.	ThemeController:
-
-The ThemeController is responsible for managing the theme state (light or dark) across the app. It uses an RxBool variable isLight to track the current theme state.
+1.	ThemeController: The ThemeController is responsible for managing the theme state (light or dark) across the app. It uses an RxBool variable isLight to track the current theme state.
 
 	import 'package:flutter/material.dart';
 	import 'package:get/get.dart';
